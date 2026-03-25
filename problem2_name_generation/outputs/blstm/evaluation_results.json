@@ -1,0 +1,83 @@
+{
+  "model_name": "BLSTM",
+  "perplexity": 1.000455367081269,
+  "novelty": 1.0,
+  "diversity": 0.5,
+  "n_generated": 52,
+  "n_unique": 26,
+  "character_distribution": {
+    "total_chars": 262,
+    "unique_chars": 19,
+    "most_common_chars": [
+      [
+        "k",
+        47
+      ],
+      [
+        "i",
+        35
+      ],
+      [
+        "u",
+        29
+      ],
+      [
+        "g",
+        20
+      ],
+      [
+        "s",
+        19
+      ],
+      [
+        "v",
+        17
+      ],
+      [
+        "r",
+        17
+      ],
+      [
+        "o",
+        14
+      ],
+      [
+        "n",
+        11
+      ],
+      [
+        "p",
+        10
+      ]
+    ]
+  },
+  "length_distribution": {
+    "mean_length": 5.038461538461538,
+    "std_length": 6.342656378902171,
+    "min_length": 1,
+    "max_length": 15,
+    "median_length": 1.0
+  },
+  "sample_names": [
+    "c",
+    "j",
+    "p",
+    "k",
+    "sususususususus",
+    "z",
+    "v",
+    "f",
+    "n",
+    "z",
+    "s",
+    "l",
+    "rororororororor",
+    "s",
+    "f",
+    "r",
+    "viviviviviviviv",
+    "sususususususus",
+    "kkkkkkkkkkkkkkk",
+    "r"
+  ]
+}

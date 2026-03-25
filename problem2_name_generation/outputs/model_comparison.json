@@ -1,0 +1,251 @@
+{
+  "vanilla_rnn": {
+    "model_name": "VanillaRNN",
+    "perplexity": 2.267428295249917,
+    "novelty": 0.0,
+    "diversity": 0.63,
+    "n_generated": 100,
+    "n_unique": 63,
+    "character_distribution": {
+      "total_chars": 668,
+      "unique_chars": 22,
+      "most_common_chars": [
+        [
+          "a",
+          149
+        ],
+        [
+          "r",
+          62
+        ],
+        [
+          "n",
+          61
+        ],
+        [
+          "i",
+          53
+        ],
+        [
+          "h",
+          49
+        ],
+        [
+          "s",
+          48
+        ],
+        [
+          "e",
+          32
+        ],
+        [
+          "t",
+          28
+        ],
+        [
+          "p",
+          26
+        ],
+        [
+          "j",
+          25
+        ]
+      ]
+    },
+    "length_distribution": {
+      "mean_length": 6.68,
+      "std_length": 1.399142594591416,
+      "min_length": 3,
+      "max_length": 10,
+      "median_length": 6.5
+    },
+    "sample_names": [
+      "bharath",
+      "bharath",
+      "suresh",
+      "mainak",
+      "subhadra",
+      "vidya",
+      "rajesh",
+      "subhadra",
+      "tanushree",
+      "priya",
+      "parth",
+      "rajesh",
+      "krishnan",
+      "sanjukta",
+      "rajesh",
+      "gopalan",
+      "chandana",
+      "saraswathi",
+      "aditi",
+      "krishnan"
+    ]
+  },
+  "blstm": {
+    "model_name": "BLSTM",
+    "perplexity": 1.000455367081269,
+    "novelty": 1.0,
+    "diversity": 0.5,
+    "n_generated": 52,
+    "n_unique": 26,
+    "character_distribution": {
+      "total_chars": 262,
+      "unique_chars": 19,
+      "most_common_chars": [
+        [
+          "k",
+          47
+        ],
+        [
+          "i",
+          35
+        ],
+        [
+          "u",
+          29
+        ],
+        [
+          "g",
+          20
+        ],
+        [
+          "s",
+          19
+        ],
+        [
+          "v",
+          17
+        ],
+        [
+          "r",
+          17
+        ],
+        [
+          "o",
+          14
+        ],
+        [
+          "n",
+          11
+        ],
+        [
+          "p",
+          10
+        ]
+      ]
+    },
+    "length_distribution": {
+      "mean_length": 5.038461538461538,
+      "std_length": 6.342656378902171,
+      "min_length": 1,
+      "max_length": 15,
+      "median_length": 1.0
+    },
+    "sample_names": [
+      "c",
+      "j",
+      "p",
+      "k",
+      "sususususususus",
+      "z",
+      "v",
+      "f",
+      "n",
+      "z",
+      "s",
+      "l",
+      "rororororororor",
+      "s",
+      "f",
+      "r",
+      "viviviviviviviv",
+      "sususususususus",
+      "kkkkkkkkkkkkkkk",
+      "r"
+    ]
+  },
+  "rnn_attention": {
+    "model_name": "RNNWithAttention",
+    "perplexity": 1.0036102297168736,
+    "novelty": 0.99,
+    "diversity": 0.92,
+    "n_generated": 100,
+    "n_unique": 92,
+    "character_distribution": {
+      "total_chars": 607,
+      "unique_chars": 21,
+      "most_common_chars": [
+        [
+          "c",
+          129
+        ],
+        [
+          "a",
+          100
+        ],
+        [
+          "h",
+          82
+        ],
+        [
+          "u",
+          63
+        ],
+        [
+          "g",
+          48
+        ],
+        [
+          "b",
+          41
+        ],
+        [
+          "o",
+          31
+        ],
+        [
+          "z",
+          23
+        ],
+        [
+          "y",
+          23
+        ],
+        [
+          "n",
+          20
+        ]
+      ]
+    },
+    "length_distribution": {
+      "mean_length": 6.07,
+      "std_length": 2.219256632298302,
+      "min_length": 3,
+      "max_length": 15,
+      "median_length": 5.0
+    },
+    "sample_names": [
+      "chagghan",
+      "chacchag",
+      "cowoo",
+      "chagg",
+      "choc",
+      "cubag",
+      "gowanan",
+      "chaccha",
+      "chacgan",
+      "chaccbhubhu",
+      "chacchu",
+      "zod",
+      "chacnun",
+      "faya",
+      "guchu",
+      "chocan",
+      "chav",
+      "chag",
+      "chaggan",
+      "chucac"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "doc_id": "academic_regulations_000",
+    "category": "academic_regulations",
+    "url": "https://www.iitj.ac.in",
+    "filepath": "data/raw/academic_regulations/academic_regulations_000.txt",
+    "word_count": 523
+  },
+  {
+    "doc_id": "academic_regulations_001",
+    "category": "academic_regulations",
+    "url": "https://www.iitj.ac.in/main/en/introduction",
+    "filepath": "data/raw/academic_regulations/academic_regulations_001.txt",
+    "word_count": 248
+  },
+  {
+    "doc_id": "departments_002",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/computer-science-engineering",
+    "filepath": "data/raw/departments/departments_002.txt",
+    "word_count": 720
+  },
+  {
+    "doc_id": "departments_003",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/electrical-engineering",
+    "filepath": "data/raw/departments/departments_003.txt",
+    "word_count": 601
+  },
+  {
+    "doc_id": "departments_004",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/mechanical-engineering",
+    "filepath": "data/raw/departments/departments_004.txt",
+    "word_count": 639
+  },
+  {
+    "doc_id": "departments_005",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/chemistry",
+    "filepath": "data/raw/departments/departments_005.txt",
+    "word_count": 683
+  },
+  {
+    "doc_id": "departments_006",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/physics",
+    "filepath": "data/raw/departments/departments_006.txt",
+    "word_count": 1024
+  },
+  {
+    "doc_id": "departments_007",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/mathematics",
+    "filepath": "data/raw/departments/departments_007.txt",
+    "word_count": 657
+  },
+  {
+    "doc_id": "departments_008",
+    "category": "departments",
+    "url": "https://www.iitj.ac.in/bioscience-bioengineering",
+    "filepath": "data/raw/departments/departments_008.txt",
+    "word_count": 684
+  },
+  {
+    "doc_id": "research_009",
+    "category": "research",
+    "url": "https://www.iitj.ac.in/main/en/research-highlight",
+    "filepath": "data/raw/research/research_009.txt",
+    "word_count": 198
+  },
+  {
+    "doc_id": "research_010",
+    "category": "research",
+    "url": "https://www.iitj.ac.in/computer-science-engineering/en/Research-Highlights",
+    "filepath": "data/raw/research/research_010.txt",
+    "word_count": 224
+  },
+  {
+    "doc_id": "research_011",
+    "category": "research",
+    "url": "https://www.iitj.ac.in/electrical-engineering/en/Research-Highlights",
+    "filepath": "data/raw/research/research_011.txt",
+    "word_count": 205
+  },
+  {
+    "doc_id": "courses_012",
+    "category": "courses",
+    "url": "https://www.iitj.ac.in/mechanical-engineering/en/courses",
+    "filepath": "data/raw/courses/courses_012.txt",
+    "word_count": 233
+  },
+  {
+    "doc_id": "about_013",
+    "category": "about",
+    "url": "https://www.iitj.ac.in/office-of-students/en/campus-life",
+    "filepath": "data/raw/about/about_013.txt",
+    "word_count": 298
+  },
+  {
+    "doc_id": "about_014",
+    "category": "about",
+    "url": "https://www.iitj.ac.in/main/en/iitj",
+    "filepath": "data/raw/about/about_014.txt",
+    "word_count": 523
+  },
+  {
+    "doc_id": "about_015",
+    "category": "about",
+    "url": "https://www.iitj.ac.in/main/en/director",
+    "filepath": "data/raw/about/about_015.txt",
+    "word_count": 768
+  },
+  {
+    "doc_id": "about_016",
+    "category": "about",
+    "url": "https://www.iitj.ac.in/main/en/chairman",
+    "filepath": "data/raw/about/about_016.txt",
+    "word_count": 629
+  }
+]

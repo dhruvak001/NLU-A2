@@ -1,0 +1,148 @@
+# Configuration for Problem 2: Name Generation
+# Dhruva Kumar Kaushal (B22AI017)
+
+# Data Generation Settings
+data_generation:
+  n_names: 5000                      # Total number of names to generate
+  use_llm: true                      # Use LLM for generation (if false, use seed data)
+  llm_provider: "openai"             # "openai" or "anthropic"
+  model_name: "gpt-3.5-turbo"        # LLM model to use
+  temperature: 0.8                   # LLM temperature for diversity
+  batch_size: 50                     # Names per API call
+  
+  # Regional distribution
+  regions:
+    - Hindi
+    - Tamil
+    - Telugu
+    - Bengali
+    - Punjabi
+    - Marathi
+    - Gujarati
+    - Kannada
+    - Malayalam
+    - Odia
+  
+  # Gender distribution
+  genders:
+    male: 0.50
+    female: 0.50
+  
+  # Name length constraints
+  min_length: 3
+  max_length: 15
+
+# Character Vocabulary
+vocabulary:
+  lowercase: true                    # Convert all to lowercase
+  max_vocab_size: 100                # Maximum vocabulary size
+  special_tokens:
+    - "<PAD>"                        # Padding token
+    - "<SOS>"                        # Start of sequence
+    - "<EOS>"                        # End of sequence
+    - "<UNK>"                        # Unknown character
+
+# Model Architectures
+models:
+  vanilla_rnn:
+    embedding_dim: 128
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.3
+    
+  blstm:
+    embedding_dim: 128
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.3
+    bidirectional: true
+    
+  rnn_attention:
+    embedding_dim: 128
+    hidden_dim: 256
+    num_layers: 2
+    attention_dim: 128
+    dropout: 0.3
+
+# Training Configuration
+training:
+  # General
+  batch_size: 64
+  num_epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  
+  # Optimization
+  optimizer: "adam"
+  scheduler: "reduce_on_plateau"
+  scheduler_patience: 3
+  scheduler_factor: 0.5
+  
+  # Early stopping
+  early_stopping: true
+  patience: 7
+  min_delta: 0.001
+  
+  # Validation
+  validation_split: 0.15
+  test_split: 0.15
+  
+  # Checkpointing
+  save_every: 5                      # Save checkpoint every N epochs
+  save_best: true                    # Save best model based on validation loss
+  
+  # GPU
+  use_cuda: true                     # Use GPU if available
+  
+  # Reproducibility
+  seed: 42
+
+# Generation Settings
+generation:
+  # Sampling methods
+  temperature: 0.8                   # Sampling temperature (0.0 = greedy, 1.0 = random)
+  top_k: 0                          # Top-k sampling (0 = disabled)
+  top_p: 0.9                        # Nucleus sampling threshold
+  
+  # Generation parameters
+  max_length: 15                    # Maximum generated name length
+  num_samples: 100                  # Number of names to generate per model
+  batch_size: 32                    # Batch size for generation
+  
+  # Filtering
+  min_length: 3                     # Minimum name length
+  filter_duplicates: true           # Remove duplicate generations
+
+# Evaluation Settings
+evaluation:
+  # Metrics
+  compute_novelty: true             # Novel names / Total names
+  compute_diversity: true           # Unique names / Total names
+  compute_perplexity: true          # Model perplexity
+  
+  # Qualitative analysis
+  sample_size: 50                   # Number of samples for qualitative analysis
+  analyze_linguistic: true          # Linguistic plausibility
+  analyze_cultural: true            # Cultural appropriateness
+  analyze_gender: true              # Gender alignment
+  
+  # Comparison
+  compare_models: true              # Compare all three models
+  generate_report: true             # Generate comprehensive report
+
+# Output Settings
+output:
+  base_dir: "outputs"
+  save_generated_names: true
+  save_training_plots: true
+  save_analysis: true
+  verbose: true
+
+# Paths (auto-configured)
+paths:
+  data_dir: "data"
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  models_dir: "models"
+  outputs_dir: "outputs"
+  logs_dir: "logs"

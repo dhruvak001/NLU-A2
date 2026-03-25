@@ -1,0 +1,83 @@
+{
+  "model_name": "RNNWithAttention",
+  "perplexity": 1.0036102297168736,
+  "novelty": 0.99,
+  "diversity": 0.92,
+  "n_generated": 100,
+  "n_unique": 92,
+  "character_distribution": {
+    "total_chars": 607,
+    "unique_chars": 21,
+    "most_common_chars": [
+      [
+        "c",
+        129
+      ],
+      [
+        "a",
+        100
+      ],
+      [
+        "h",
+        82
+      ],
+      [
+        "u",
+        63
+      ],
+      [
+        "g",
+        48
+      ],
+      [
+        "b",
+        41
+      ],
+      [
+        "o",
+        31
+      ],
+      [
+        "z",
+        23
+      ],
+      [
+        "y",
+        23
+      ],
+      [
+        "n",
+        20
+      ]
+    ]
+  },
+  "length_distribution": {
+    "mean_length": 6.07,
+    "std_length": 2.219256632298302,
+    "min_length": 3,
+    "max_length": 15,
+    "median_length": 5.0
+  },
+  "sample_names": [
+    "chagghan",
+    "chacchag",
+    "cowoo",
+    "chagg",
+    "choc",
+    "cubag",
+    "gowanan",
+    "chaccha",
+    "chacgan",
+    "chaccbhubhu",
+    "chacchu",
+    "zod",
+    "chacnun",
+    "faya",
+    "guchu",
+    "chocan",
+    "chav",
+    "chag",
+    "chaggan",
+    "chucac"
+  ]
+}

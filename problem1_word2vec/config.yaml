@@ -1,0 +1,211 @@
+# Configuration for Problem 1: Word Embeddings
+
+# Data Collection Settings
+data_collection:
+  base_url: "https://www.iitj.ac.in"
+  sources:
+    - name: "academic_regulations"
+      url: "https://www.iitj.ac.in/academics/regulations"
+      priority: "mandatory"
+    - name: "departments"
+      url: "https://www.iitj.ac.in/departments"
+      priority: "high"
+    - name: "faculty"
+      url: "https://www.iitj.ac.in/faculty"
+      priority: "high"
+    - name: "research"
+      url: "https://www.iitj.ac.in/research"
+      priority: "medium"
+    - name: "courses"
+      url: "https://www.iitj.ac.in/academics/courses"
+      priority: "medium"
+  
+  rate_limit_seconds: 2
+  max_retries: 3
+  timeout: 30
+  respect_robots: true
+
+# Preprocessing Settings
+preprocessing:
+  min_word_count: 5
+  max_vocab_size: 50000
+  min_sentence_length: 3
+  max_sentence_length: 100
+  remove_stopwords: false  # Keep for Word2Vec
+  lowercase: true
+  remove_numbers: true
+  remove_special_chars: true
+
+# Word2Vec Model Settings
+word2vec:
+  # Training configurations
+  experiments:
+    # Baseline experiments
+    - name: "cbow_baseline"
+      model_type: "cbow"
+      embedding_dim: 100
+      window_size: 5
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    - name: "skipgram_baseline"
+      model_type: "skipgram"
+      embedding_dim: 100
+      window_size: 5
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    # Dimension experiments
+    - name: "cbow_dim50"
+      model_type: "cbow"
+      embedding_dim: 50
+      window_size: 5
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    - name: "cbow_dim200"
+      model_type: "cbow"
+      embedding_dim: 200
+      window_size: 5
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    # Window size experiments
+    - name: "cbow_window2"
+      model_type: "cbow"
+      embedding_dim: 100
+      window_size: 2
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    - name: "cbow_window10"
+      model_type: "cbow"
+      embedding_dim: 100
+      window_size: 10
+      negative_samples: 10
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    # Negative samples experiments
+    - name: "skipgram_neg5"
+      model_type: "skipgram"
+      embedding_dim: 100
+      window_size: 5
+      negative_samples: 5
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+    
+    - name: "skipgram_neg20"
+      model_type: "skipgram"
+      embedding_dim: 100
+      window_size: 5
+      negative_samples: 20
+      learning_rate: 0.001
+      epochs: 50
+      batch_size: 256
+
+# Semantic Analysis
+semantic_analysis:
+  target_words:
+    - "research"
+    - "student"
+    - "phd"
+    - "exam"
+  
+  analogies:
+    - {a: "ug", b: "btech", a_star: "pg", expected: "mtech"}
+    - {a: "student", b: "undergraduate", a_star: "scholar", expected: "postgraduate"}
+    - {a: "course", b: "exam", a_star: "research", expected: "thesis"}
+    - {a: "btech", b: "engineering", a_star: "msc", expected: "science"}
+    - {a: "department", b: "head", a_star: "institute", expected: "director"}
+  
+  top_k_neighbors: 5
+
+# Visualization Settings
+visualization:
+  methods:
+    - "pca"
+    - "tsne"
+  
+  tsne:
+    perplexity: [20, 30, 50]
+    n_iter: 5000
+    random_state: 42
+  
+  pca:
+    n_components: 2
+    random_state: 42
+  
+  word_categories:
+    academic_programs:
+      - "ug"
+      - "pg"
+      - "btech"
+      - "mtech"
+      - "phd"
+      - "undergraduate"
+      - "graduate"
+      - "postgraduate"
+      - "msc"
+      - "degree"
+    
+    academic_roles:
+      - "student"
+      - "professor"
+      - "faculty"
+      - "teacher"
+      - "scholar"
+      - "researcher"
+      - "director"
+      - "dean"
+    
+    academic_activities:
+      - "research"
+      - "study"
+      - "exam"
+      - "test"
+      - "thesis"
+      - "dissertation"
+      - "project"
+      - "lecture"
+      - "seminar"
+    
+    departments:
+      - "engineering"
+      - "science"
+      - "mathematics"
+      - "computer"
+      - "electrical"
+      - "mechanical"
+      - "physics"
+      - "chemistry"
+    
+    administrative:
+      - "department"
+      - "institute"
+      - "college"
+      - "office"
+      - "administration"
+      - "semester"
+      - "admission"
+
+# Output Settings
+output:
+  save_models: true
+  save_embeddings: true
+  save_visualizations: true
+  save_results: true
+  figure_dpi: 300
+  figure_format: "png"

@@ -1,0 +1,39 @@
+{
+  "model_name": "BLSTM",
+  "n_generated": 28,
+  "n_unique": 28,
+  "metadata": {
+    "temperature": 0.8,
+    "max_length": 15
+  },
+  "names": [
+    "kekekekekekekek",
+    "unununununununu",
+    "kikikikikikikik",
+    "jojojojojojojoj",
+    "urururururururu",
+    "gigigigigigigig",
+    "sisisisisisisis",
+    "vavavavavavavav",
+    "dededededededed",
+    "tititititititit",
+    "nononononononon",
+    "jajajajajajajaj",
+    "kukukukukukukuk",
+    "dididididididid",
+    "uuuuuuuuuuuuuuu",
+    "gagagagagagagag",
+    "pipipipipipipip",
+    "shshshshshshshs",
+    "lililililililil",
+    "lelelelelelelel",
+    "kkkkkkkkkkkkkkk",
+    "viviviviviviviv",
+    "kakakakakakakak",
+    "fisisisisisisis",
+    "umumumumumumumu",
+    "tetetetetetetet",
+    "uiuiuiuiuiuiuiu",
+    "sususususususus"
+  ]
+}
