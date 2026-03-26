@@ -546,33 +546,6 @@ A comprehensive report covering both problems is available in **FINAL_REPORT.pdf
 - Generated names (JSON, TXT)
 - Model comparison (JSON)
 
-## Known Issues & Limitations
-
-### Problem 1
-- Small corpus size (limited web scraping)
-- Some rare words may not have meaningful embeddings
-- Analogy tasks require larger vocabulary for better performance
-
-### Problem 2
-- Vanilla RNN shows overfitting (0% novelty)
-- BLSTM exhibits mode collapse (repetitive patterns)
-- RNN with Attention generates some nonsensical names
-
-## Future Improvements
-
-### Problem 1
-- Expand corpus with more diverse text sources
-- Implement subword embeddings (FastText)
-- Add pre-training on larger corpus
-- Implement word2vec optimization techniques (hierarchical softmax)
-
-### Problem 2
-- Add regularization to reduce overfitting
-- Fix BLSTM mode collapse issue
-- Implement beam search for better generation
-- Add vocabulary constraints during generation
-- Increase dataset size
-
 ## References
 
 ### Problem 1
