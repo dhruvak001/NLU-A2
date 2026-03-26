@@ -340,113 +340,19 @@ Expected: Creates model, shows parameters, tests with dummy data
 ### All Code is Original and From Scratch
 
 **What's implemented from scratch:**
-- ✅ CBOW architecture
-- ✅ Skip-gram architecture
-- ✅ Negative sampling
-- ✅ Training loop
-- ✅ Vocabulary builder
-- ✅ Data preprocessing
+-  CBOW architecture
+-  Skip-gram architecture
+-  Negative sampling
+-  Training loop
+-  Vocabulary builder
+-  Data preprocessing
 
 **What uses libraries (as allowed):**
-- ✅ PyTorch for gradients and backpropagation
-- ✅ PyTorch for activation functions (sigmoid)
-- ✅ NumPy for array operations
-- ✅ NLTK for tokenization
+-  PyTorch for gradients and backpropagation
+-  PyTorch for activation functions (sigmoid)
+-  NumPy for array operations
+-  NLTK for tokenization
 
-This is **exactly as specified** in the assignment!
-
-### Code Comments
-
-Every file has:
-- Detailed docstrings for all functions/classes
-- Inline comments explaining logic
-- Mathematical formulas in comments
-- References to papers where applicable
-
-**This demonstrates understanding and proves originality!**
-
----
-
-## 📝 NEXT STEPS FOR COMPLETION
-
-### Today (March 24) - 4 hours
-1. ✅ Setup environment (DONE)
-2. ⏳ Test Problem 1 with small dataset (30 min)
-3. ⏳ Start real data collection (1 hour)
-4. ⏳ Train baseline models (2 hours)
-5. ⏳ Generate 1000 Indian names for Problem 2 (30 min)
-
-### Tomorrow (March 25) - 8 hours
-1. Complete Problem 1 analysis and visualization (2 hours)
-2. Implement Vanilla RNN (2 hours)
-3. Implement BLSTM (2 hours)
-4. Implement RNN+Attention (2 hours)
-
-### Day 3 (March 26) - 8 hours
-1. Train all RNN models (4 hours)
-2. Evaluate models (2 hours)
-3. Start writing reports (2 hours)
-
-### Day 4 (March 27) - 8 hours
-1. Complete both reports (6 hours)
-2. Final testing and packaging (2 hours)
-
-**Total: ~28 hours over 4 days**
-
----
-
-## 🐛 TROUBLESHOOTING
-
-### Issue: Import errors when running scripts
-
-**Solution:**
-```bash
-# Make sure you're in the virtual environment
-source venv/bin/activate
-
-# Reinstall requirements
-pip install -r requirements.txt
-```
-
-### Issue: Web scraping fails
-
-**Solution:**
-- Check internet connection
-- IIT Jodhpur website might be down
-- Use cached data if available
-- Try different URLs from config.yaml
-
-### Issue: Out of memory during training
-
-**Solution:**
-```yaml
-# Edit config.yaml, reduce batch_size:
-batch_size: 128  # or even 64
-```
-
-### Issue: Training too slow
-
-**Solution:**
-```python
-# Check if CUDA is available
-python3 -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
-
-# If False, training will be on CPU (slower but works)
-```
-
-### Issue: Models not learning (loss not decreasing)
-
-**Possible causes:**
-- Learning rate too high/low
-- Data quality issues
-- Vocabulary too small
-
-**Solutions:**
-- Try different learning rates
-- Check corpus statistics
-- Ensure min_word_count is not too high
-
----
 
 ##  OUTPUTS
 
